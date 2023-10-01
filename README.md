@@ -3,7 +3,7 @@
 <h1 align="center">YouTube André Lusegardis</h1>
 
 <h2 align="center">
-  NextJs copy
+  NextJs copy function (ctrl + c)
 </h2>
 
 <details open="open">
