@@ -11,7 +11,7 @@ export default function Home() {
 
     copyTextToClipboard(inputText);
 
-    enqueueSnackbar(`${inputText} copiado para área de transferência`, {
+    enqueueSnackbar(`${inputText} copied to clipboard`, {
       variant: "success",
     });
   };
