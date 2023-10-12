@@ -1,12 +1,14 @@
 import { SnackbarProvider, enqueueSnackbar } from "notistack";
-import { useState } from "react";
+import { FormEvent, useState } from "react";
 
 export default function Home() {
   const copyTextToClipboard = (text: string) => {
     navigator.clipboard.writeText(text);
   };
 
-  const handleCopyClick = () => {
+  const handleCopyClick = (event: FormEvent) => {
+    event.preventDefault();
+
     copyTextToClipboard(inputText);
 
     enqueueSnackbar(`${inputText} copiado para área de transferência`, {
@@ -27,17 +29,19 @@ export default function Home() {
         </a>
       </header>
 
-      <div className="content">
+      <form className="content" onSubmit={handleCopyClick}>
         <input
           className="main-input"
           placeholder="Type a text"
           onChange={(event) => setInputText(event.target.value)}
         />
-        <button className="main-button" onClick={handleCopyClick}>
+        <button className="main-button" type="submit">
           Copy
         </button>
+
+        {/* display message */}
         <SnackbarProvider />
-      </div>
+      </form>
     </>
   );
 }
