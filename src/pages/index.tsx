@@ -23,7 +23,7 @@ export default function Home() {
     <>
       <header>
         <a href="https://www.youtube.com/@DeveloperALMO">
-          <h1>DeveloperAlmo</h1>
+          <h1>DeveloperALMO</h1>
           <h2>YouTube Channel</h2>
           <hr />
         </a>
