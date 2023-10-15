@@ -44,7 +44,7 @@ yarn dev
 
 ## YouTube
 
-Video:
+Video: https://youtu.be/kYkZ451n7BY?si=CJs8LMb57TFaETkv
 
 ## Contact
 
